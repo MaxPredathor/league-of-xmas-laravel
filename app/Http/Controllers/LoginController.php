@@ -20,7 +20,8 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             return response()->json([
                 'status' => true,
-                'message' => 'User logged in successfully'
+                'message' => 'User logged in successfully',
+                'name' => Auth::user()->name
             ]);
         }
         return response()->json([
