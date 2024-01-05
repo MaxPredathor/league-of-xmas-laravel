@@ -10,7 +10,7 @@
 ## Installazione Laravel
 
 ```bash
-cd cartella 
+cd cartella
 
 composer create-project --prefer-dist laravel/laravel:^9.2 your_project_name
 
@@ -24,6 +24,7 @@ crtl + c
 ```
 
 ## Configurazione Laravel
+
 ```bash
 composer require pacificdev/laravel_9_preset
 
