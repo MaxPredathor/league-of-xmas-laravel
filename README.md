@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Configurazione Laravel
+## Configuration of Laravel
 
 -   Copy and paste the .env file, then in the terminal:
 
