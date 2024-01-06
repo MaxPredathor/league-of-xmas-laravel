@@ -7,66 +7,22 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Installazione Laravel
-
-```bash
-cd cartella
-
-composer create-project --prefer-dist laravel/laravel:^9.2 your_project_name
-
-cd your_project_name
-
-code . -r
-
-php artisan serve
-
-crtl + c
-```
-
 ## Configurazione Laravel
 
+-   Copy and paste the .env file, then in the terminal:
+
 ```bash
-composer require pacificdev/laravel_9_preset
-
-php artisan preset:ui bootstrap
-
-npm install
-
-npm install --save @fortawesome/fontawesome-free
-
-#In vite config aggiungere agli alias
-'~@fortawesome': path.resolve(__dirname, 'node_modules/@fortawesome'),
-
-#Copio la cartella dei webfont e la incollo dentro resources
-
-#Nel file app.scss
-@use './partials/variables' as *;
-
-$fa-font-path: "../webfonts" !default;
-
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
-@import "~@fortawesome/fontawesome-free/scss/regular";
-@import "~@fortawesome/fontawesome-free/scss/solid";
-@import "~@fortawesome/fontawesome-free/scss/brands";
-
-#Comandi git
-
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/MaxPredathor/template_laravel_base.git
-git push -u origin main
-
-#Creo nuova repo su github da template
-
-#Clono la repo da vs
-
 composer install
-
-#Copiare  il file .env.example e rinominarlo in .env
 
 php artisan key:generate
 
-npm install
 ```
+
+-   In .env file write your DB_PASSWORD and the name of your database (DB_DATABASE).
+
+-   Run `php artisan migrate` to create the tables.
+
+## Reminder
+
+-   Remember to run the MAMMP/XAMMP server.
+-   Remember to run `php artisan serve` in the terminal and keep it running in the background
