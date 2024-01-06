@@ -21,7 +21,8 @@ class LoginController extends Controller
             return response()->json([
                 'status' => true,
                 'message' => 'User logged in successfully',
-                'name' => Auth::user()->name
+                'name' => Auth::user()->name,
+                'region' => Auth::user()->region
             ]);
         }
         return response()->json([

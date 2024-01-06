@@ -18,6 +18,7 @@ class RegisterController extends Controller
             'name' => $input['name'],
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
+            'region' => $input['region']
         ]);
 
         return response()->json([
